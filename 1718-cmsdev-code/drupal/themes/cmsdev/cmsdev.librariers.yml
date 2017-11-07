@@ -1,0 +1,15 @@
+global-styling:
+  version: 1.0.0
+  css:
+    theme:
+      assets/includes/bootstrap/bootstrap.css
+      assets/style.css: {}
+  js:
+    assets/includes/bootstrap/bootstrap.js: {}
+    assets/scripts/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

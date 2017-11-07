@@ -1,0 +1,14 @@
+name: 'Awesome CMS Development theme'
+type: theme
+base theme: classy
+description: "First drupal 8 theme wit lots of awesomeness"
+version: 1.0.0
+core: 8.x
+libraries: 
+  - csmdev/global-styling
+regions:
+  header: 'Header'
+  top: 'Above header'
+  content: 'Content'
+  sidebar: 'Sidebar Right'
+  footer: 'Footer'

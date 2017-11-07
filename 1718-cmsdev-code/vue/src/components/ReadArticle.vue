@@ -5,12 +5,23 @@
 </template>
 
 <script>
+import  axios from 'axios'
 export default {
-  name: 'addPost',
+  name: 'read-article',
   data () {
     return {
-      msg: 'Add a new post'
+      msg: 'Read'
     }
+  },
+  created() {
+    axios
+      .get('http://cmsdev.localhost/node/1?_format=hal_json')
+      .then(({data:response}) => {
+        console.log(response)
+      })
+      .catch(({message:error}) => {
+        console.error(error)
+      })
   }
 }
 </script>

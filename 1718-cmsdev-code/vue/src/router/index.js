@@ -1,8 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-import Posts from '@/components/Posts'
-import AddPost from '@/components/AddPost'
+import AddArticle from '@/components/AddArticle'
+import ReadArticle from '@/components/ReadArticle'
+
+import Courses from '@/components/Courses'
+import Students from '@/components/Students'
+import Instructors from '@/components/Instructors'
 
 
 Vue.use(Router)
@@ -15,14 +19,29 @@ export default new Router({
       component: Hello
     },
     {
-      path: '/posts',
-      name: 'Posts',
-      component: Posts
+      path: '/add-article',
+      name: 'AddArticle',
+      component: AddArticle
     },
     {
-      path: '/addpost',
-      name: 'AddPost',
-      component: AddPost
+      path: '/read-article',
+      name: 'ReadArticle',
+      component: ReadArticle
+    },
+    {
+      path: '/courses',
+      name: 'Courses',
+      component: Courses
+    },
+    {
+      path: '/students',
+      name: 'Students',
+      component: Students
+    },
+    {
+      path: '/instructors',
+      name: 'Instructors',
+      component: Instructors
     }
   ]
 })
